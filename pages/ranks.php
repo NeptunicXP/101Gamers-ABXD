@@ -37,7 +37,7 @@ if(count($ranksetNames) > 1)
 
 
 	echo "
-		<table class=\"outline margin width25\">
+		<table class=\"outline margin width75\">
 			<tr class=\"header0\">
 				<th colspan=\"2\">
 					".__("Ranksets")."
