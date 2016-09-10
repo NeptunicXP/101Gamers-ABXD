@@ -1,5 +1,5 @@
 <?php
 
-$sideBarStuff .= "UID: ".$post['uid']."<br />";
+$sideBarStuff .= "User ID: ".$poster['id']."<br />";
 
 ?>
