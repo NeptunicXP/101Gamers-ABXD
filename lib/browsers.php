@@ -4,13 +4,15 @@
 //$isIE6 = FALSE;
 
 //$lastKnownBrowser = $_SERVER['HTTP_USER_AGENT'];
-$lastKnownBrowser = "Something";
+$lastKnownBrowser = "Unknown";
 
 //Opera/9.80 (iPhone; Opera Mini/5.0.0176/764; U; en) Presto/2.4.15
 
 $knownBrowsers = array
 (
 	"IE" => "Internet Explorer",
+	"Edge" => "Microsoft Edge",
+	"PaleMoon" => "Pale Moon",
 	"rekonq" => "rekonq",
 	"OPR" => "Opera",
 	"Otter" => "Otter",
@@ -23,6 +25,8 @@ $knownBrowsers = array
 	"Opera" => "Opera",
 	"Iceweasel" => "Iceweasel",
 	"MozillaDeveloperPreview" => "Firefox (Development build)",
+	"Waterfox" => "Waterfox",
+	"SeaMonkey" => "SeaMonkey",
 	"Firefox" => "Firefox",
 	"dwb" => "DWB",
 	"Chrome" => "Chrome",
@@ -56,6 +60,8 @@ $knownOSes = array
 	"Windows NT 6.0" => "Windows Vista",
 	"Windows NT 6.1" => "Windows 7",
 	"Windows NT 6.2" => "Windows 8",
+	"Windows NT 6.3" => "Windows 8.1",
+	"Windows NT 10.0" => "Windows 10",
 	"Windows Mobile" => "Windows Mobile",
 	"FreeBSD" => "FreeBSD",
 	"Ubuntu" => "Ubuntu",
