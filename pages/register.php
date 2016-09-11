@@ -49,8 +49,10 @@ if(isset($_POST['name']))
 		$err = __("The user name must not be empty. Please choose one.");
 	else if(strpos($name, ";") !== false)
 		$err = __("The user name cannot contain semicolons.");
-	elseif($ipKnown >= 3)
+	elseif($ipKnown >= 1)
 		$err = __("Another user is already using this IP address.");
+	else if(strlen($_POST['pass']) < 6)
+		$err = __("Your password must be at least six characters long.");
 	else if ($_POST['pass'] !== $_POST['pass2'])
 		$err = __("The passwords you entered don't match.");
 	else if($haveSecurimage)
